@@ -14,7 +14,8 @@ let transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "norbert.janicke@gmail.com", // TODO: your gmail account
-    pass: "Abc-123456789" // TODO: your gmail password
+    pass: "Abc-123456789" // TODO: your gmail password 
+    // this is correct username and password for an account I created on gmail and you can use it to test 
   }
 });
 
@@ -35,10 +36,11 @@ function send(list) {
   var i = 0,
     howManyTimes = list.length;
   // declare function f which performs as for loop but couldnt use for loop with setTimeout function
-  // so i came up with this solution and it works perfectly .
+  // so i came up with this solution (recursion) and it works perfectly .
   function f() {
     // first invoking transporter.sendmail and passing for it the result of the formatMsg
     // and detecting the errors
+    // we repeat the step above for the list lenght-1 so that we loop for every element in the receipents list 
     transporter.sendMail(formatMsg(list[i]), (err, data) => {
       if (err) {
         log("Error occurs");
@@ -53,6 +55,7 @@ function send(list) {
   }
   f();
 }
-// test for these two mails
-list = ["abzokhattab100@gmail.com", "abzokhattab@gmail.com"];
+// test for this list of mails 
+// here you can change it to what ever emails you like to test the program 
+list = ["abzokhattab100@gmail.com", "abzokhattab@gmail.com",'abdelrahmankhattab100@gmail.com','abdelrahmankhattab99@gmail.com'];
 send(list);
