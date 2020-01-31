@@ -43,7 +43,7 @@ function send(list) {
       if (err) {
         log("Error occurs");
       }
-      log("Email sent!!!");
+    else{  log("Email sent!!!");}
     });
 
     i++;
