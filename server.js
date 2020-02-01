@@ -4,7 +4,7 @@ that you are using visual studio code .
 next step install nodemailer packet and set it as a dependancy so type 'nodemailer -S'
 now we can excecute the following code
 so how to send an email for multible receipents using Gmail account with a delay of half a second.
-first We user nodemailer and We need to define our nodemailer transporter to connect to our service.
+first We use nodemailer .
 */
 const nodemailer = require("nodemailer");
 const log = console.log;
