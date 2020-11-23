@@ -1,7 +1,5 @@
-/*
-First you need to initialize packet.Json by typing 'npm init -y' in the terminal tap supposing 
-that you are using visual studio code . 
-next step install nodemailer packet and set it as a dependancy so type 'nodemailer -S'
+/* 
+Run npm install
 now we can excecute the following code
 so how to send an email for multible receipents using Gmail account with a delay of half a second.
 first We use nodemailer .
@@ -23,7 +21,8 @@ function formatMsg(name) {
   // this function is for passing name of the receipt and formating the text , subject , the sender,  and its considered as a helper method
   // which we will use in send function
   let mailOptions = {
-    from: "norbert.janicke@gmail.com", // TODO: email sender
+    from: "test
+@gmail.com", // TODO: email sender
     to: name, // TODO: email receiver
     subject: "Nodemailer - Test",
     text: "Wooohooo it works!!"
@@ -57,5 +56,5 @@ function send(list) {
 }
 // test for this list of mails 
 // here you can change it to what ever emails you like to test the program 
-list = ["abzokhattab100@gmail.com", "abzokhattab@gmail.com",'abdelrahmankhattab100@gmail.com','abdelrahmankhattab99@gmail.com'];
+list = ["t@gmail.com",'tttt@gmail.com','teest@gmail.com'];
 send(list);
