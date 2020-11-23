@@ -20,8 +20,7 @@ function formatMsg(name) {
   // this function is for passing name of the receipt and formating the text , subject , the sender,  and its considered as a helper method
   // which we will use in send function
   let mailOptions = {
-    from: "test
-@gmail.com", // TODO: email sender
+    from: "test@gmail.com", // TODO: email sender
     to: name, // TODO: email receiver
     subject: "Nodemailer - Test",
     text: "Wooohooo it works!!"
