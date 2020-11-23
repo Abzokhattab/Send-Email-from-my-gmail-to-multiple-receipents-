@@ -1,5 +1,4 @@
 /* 
-Run npm install
 so how to send an email for multible receipents using Gmail account with a delay of half a second.
 first We use nodemailer .
 */
