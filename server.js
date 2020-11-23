@@ -9,7 +9,7 @@ let transporter = nodemailer.createTransport({
   // Make sure you fill in with your credentials such as email and password.
   service: "gmail",
   auth: {
-    user: "norbert.janicke@gmail.com", // TODO: your gmail account
+    user: "test@gmail.com", // TODO: your gmail account
     pass: "Abc-123456789" // TODO: your gmail password 
     // this is correct username and password for an account I created on gmail and you can use it to test 
   }
